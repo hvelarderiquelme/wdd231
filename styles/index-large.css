@@ -35,7 +35,6 @@
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-items: space-evenly;    
     }
 
     nav a{
@@ -45,10 +44,16 @@
     nav{
         display: flex;
         width: 100%;
-        justify-items: space-evenly;
         align-items: center;
         background-color: var(--secondary-color);
     }
+
+    .place-photo{
+    margin-left: .65rem;
+    width: auto;
+    height: auto;
+    }
+
 
     .buttons{
         display: grid;
