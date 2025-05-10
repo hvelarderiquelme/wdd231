@@ -7,7 +7,16 @@ const date = new Date(document.lastModified);
 let year = currentYear.getFullYear();
 const spanElmt = document.createElement("span");
 
-document.querySelector('#current-year').innerHTML = '&COPY;' +  year + '&#x1F3B8;Horacio Velarde Riquelme &#x1F3B8; Canada';
+document.querySelector('#current-year').innerHTML = '&COPY;' +  year + '🍁Horacio Velarde Riquelme 🍁 Canada';
 document.querySelector('#last-modified').innerHTML = date;
 ElmtYear.appendChild(spanElmt);
-ElemtLastModified.appendChild(spanElmt);          
+ElmtLastModified.appendChild(spanElmt);     
+
+//Hamburger button responsive code
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('nav');
+
+hamButton.addEventListener('click', () =>{
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
+});

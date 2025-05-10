@@ -1,0 +1,84 @@
+@media screen and (min-width: 640px){
+
+    header{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5rem;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+
+    main h1, .certificate{
+        grid-column: 1 / 3;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10rem;
+    }
+
+    .profile img{
+        padding-right: 5rem;
+    }
+
+    .navigation{
+        display: grid;
+        grid-column: 1 / 3;
+    }
+
+    nav ul{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-items: space-evenly;    
+    }
+
+    nav a{
+        display: block;
+    }
+
+    nav{
+        display: flex;
+        width: 100%;
+        justify-items: space-evenly;
+        align-items: center;
+        background-color: var(--secondary-color);
+    }
+
+    .buttons{
+        display: grid;
+        grid-column: 1 / 3;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .credits{
+        display: grid;
+        grid-column: 1 / 3;
+    }
+
+    .displayCourses{
+        display: grid;
+        grid-column: 1 / 3
+    }
+
+    .courses{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .courses fieldset{
+        display: flex;
+        width: 20rem;
+        height: 3rem;
+    }
+    
+    #menu {
+        display: none; /*hides Hamburger button*/
+    }
+}
