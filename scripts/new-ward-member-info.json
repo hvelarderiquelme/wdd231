@@ -1,0 +1,34 @@
+{
+    "familyName": "Velarde",
+    "dateIn":"MAy 6 2017",
+    "numberOfMembers": 5,
+    "visited": false,
+    "members": [
+        {
+            "name":"Horacio Velarde",
+            "gender":"Male",
+            "birthdate":"Dec 1972"
+        },
+        {
+            "name": "Suzanne Velarde",
+            "gender":"Female",
+            "birthdate":"Nov 1973"
+        },
+        {
+            "name": "Maria Velarde",
+            "gender":"Female",
+            "birthdate":"March 2003"
+        },
+        {
+            "name":"Carlos Velarde",
+            "gender":"Male",
+            "birthdate":"August 2005"
+        },
+        {
+            "name":"Rogelio Velarde",
+            "gender":"Female",
+            "birthdate":"January 2007"
+        }
+    ]
+
+}
