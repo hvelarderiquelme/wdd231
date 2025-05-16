@@ -14,22 +14,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="styles/directory.css" rel="stylesheet">
-    <link href="styles/index-large.css" rel="stylesheet">
+    <link href="styles/directory-large.css" rel="stylesheet">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/directory-last-modified.js" defer></script>
+    <script src="scripts/directory-cards.js" defer></script>
     <title>Medicine Hat Chamber of Commerce | Directory page</title>
 </head>
 <body>
-    <header>
-        <div class="logo-and-title">
-            <img src="images/Logo1.webp" alt="Logo" width="100">
+    <div class="header-large">
+        <header>
+            <img src="images/Logo1.webp" alt="Logo" width="50" height="50">
             <div>
-                <h1>Medicine Hat, Alberta</h1>
-                <h2>Chamber of Commerce</h2>
+                <span><h3>Medicine Hat, Alberta</h3></span>
+                <span><h4>Chamber of Commerce</h4></span>
             </div>
-        </div>
+            <button id="hamButton"></button>    
+        </header>    
 
-        <nav>
-            <button id="hamButton">&#9776;</button>
+        <nav id="animated-nav">   
             <ul class="menuLinks">
                 <li><a href="#">Home</a></li>
                 <li class="current-menu-item"><a href="#">Directory</a></li>
@@ -37,43 +39,72 @@
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+
     <main>
-        <div>
-            <img class="Hero" src="images/waterton-park.jpg" alt="Hero Image">
+        <div class="button-on-hero">
+            <img class="hero" src="images/waterton-park.jpg" alt="Hero Image">
             <button>Keynote tickets</button>
         </div>
         
         <h1>Home</h1>
         
-        <section>
+        <section class="events">
             <label>Events</label>
+            <fieldset>
+              <br>
+              <br>
+              <br> 
+            </fieldset>
         </section>
 
-        <section>
+        <section class="weather">
             <label>Current Weather</label>
+            <fieldset>   
+                <img src="images/weather-icon.svg" alt="weather-icon">          
+                <div class="weather-info">
+                    <p>75°F</p>
+                    <p>Partly Cloudy</p>
+                    <p>High: 85°F</p>
+                    <p>Low: 52°F</p>
+                    <p>Humidity: 34%</p>
+                    <p>Sunrise: 7:30 am</p>
+                    <p>Sunset: 9:59pm</p>
+                </div>
+            </fieldset>
         </section>
 
-        <section>
+        <section class="forecast">
             <label>Weather Forecast</label>
+            <fieldset>
+                <p>Today: 90°F</p>
+                <p>Wednesday: 89°F</p>
+                <p>Thursday: 68°F</p>
+            </fieldset>
         </section>
 
-        <section id="cards"></section>
+        <div id="cards"></div>
     </main>
     <footer>
-        <div>
+        <div class="project-info">
             <h4>Medicine Hat Chamber of Commerce</h4>
             <p>133 East Glen Dr. SE</p>
             <p>Medicine Hat, Alberta Canada</p>
             <p>info@chamber.org</p>
             <p>(999) 999-9999</p>
         </div>
-        <div>
-            <img>
-            <img>
-            <img>
+        <div class="social-media">
+            <a href="https://facebook.com">
+                <img src="images/FB.jfif" alt="facebook-logo">
+            </a>    
+            <a href="https://twitter.com">
+                <img src="images/TW.png" alt="twitter-logo">
+            </a>    
+            <a href="https://instagram.com">
+                <img src="images/IN.jfif" alt="instagram-logo">
+            </a>    
         </div>
-        <div>
+        <div class="course-info">
             <h4>WDD231 Class Project</h4>
             <p>Horacio Velarde Riquelme</p>
             <p><span id="current-year"></span></p>

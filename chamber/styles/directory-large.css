@@ -1,0 +1,39 @@
+@media only screen and (min-width: 40rem){
+
+    body{
+        background-color: var(--background-color);
+    }
+
+    .header-large{
+        border: solid var(--primary-color);
+        width: 98%;
+        margin: 1rem 1% 1rem ;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    header{
+        display: grid;
+        width: 50%;
+        grid-template-columns: auto 80%;
+    }
+    
+    #hamButton{
+        display: none;/*hides hamburger button*/
+    }
+
+    ul.menuLinks, ul.menuLinks.open{
+        /* border: solid orange 3px; */
+        display: flex;
+        justify-content: right;
+    }
+
+    nav{
+        /* border: solid black 3px; */
+        display: block;
+        width: 100%;
+        align-content: center;
+        justify-items: center;
+    }
+}
