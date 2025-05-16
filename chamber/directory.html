@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="styles/directory.css" rel="stylesheet">
     <link href="styles/directory-large.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
     <script src="scripts/directory.js" defer></script>
     <script src="scripts/directory-last-modified.js" defer></script>
     <script src="scripts/directory-cards.js" defer></script>
@@ -43,46 +44,48 @@
 
     <main>
         <div class="button-on-hero">
-            <img class="hero" src="images/waterton-park.jpg" alt="Hero Image">
+            <img class="hero" src="images/Summer-Bridges.webp" alt="Hero Image">
             <button>Keynote tickets</button>
         </div>
         
         <h1>Home</h1>
-        
-        <section class="events">
-            <label>Events</label>
-            <fieldset>
-              <br>
-              <br>
-              <br> 
-            </fieldset>
-        </section>
+        <div id="home">
+            <section class="events">
+                <label>Events</label>
+                <fieldset>
+                  <br>
+                  <br>
+                  <br> 
+                  <br>
+                  <br>
+                </fieldset>
+            </section>
 
-        <section class="weather">
-            <label>Current Weather</label>
-            <fieldset>   
-                <img src="images/weather-icon.svg" alt="weather-icon">          
-                <div class="weather-info">
-                    <p>75°F</p>
-                    <p>Partly Cloudy</p>
-                    <p>High: 85°F</p>
-                    <p>Low: 52°F</p>
-                    <p>Humidity: 34%</p>
-                    <p>Sunrise: 7:30 am</p>
-                    <p>Sunset: 9:59pm</p>
-                </div>
-            </fieldset>
-        </section>
+            <section class="weather">
+                <label>Current Weather</label>
+                <fieldset>   
+                    <img src="images/weather-icon.svg" alt="weather-icon">          
+                    <div class="weather-info">
+                        <p>75°F</p>
+                        <p>Partly Cloudy</p>
+                        <p>High: 85°F</p>
+                        <p>Low: 52°F</p>
+                        <p>Humidity: 34%</p>
+                        <p>Sunrise: 7:30 am</p>
+                        <p>Sunset: 9:59pm</p>
+                    </div>
+                </fieldset>
+            </section>
 
-        <section class="forecast">
-            <label>Weather Forecast</label>
-            <fieldset>
-                <p>Today: 90°F</p>
-                <p>Wednesday: 89°F</p>
-                <p>Thursday: 68°F</p>
-            </fieldset>
-        </section>
-
+            <section class="forecast">
+                <label>Weather Forecast</label>
+                <fieldset>
+                    <p>Today: 90°F</p>
+                    <p>Wednesday: 89°F</p>
+                    <p>Thursday: 68°F</p>
+                </fieldset>
+            </section>
+        </div>
         <div id="cards"></div>
     </main>
     <footer>

@@ -4,6 +4,7 @@
         background-color: var(--background-color);
     }
 
+    /*header formatting*/   
     .header-large{
         border: solid var(--primary-color);
         width: 98%;
@@ -23,6 +24,7 @@
         display: none;/*hides hamburger button*/
     }
 
+    /*navigatopn formatting*/
     ul.menuLinks, ul.menuLinks.open{
         /* border: solid orange 3px; */
         display: flex;
@@ -35,5 +37,88 @@
         width: 100%;
         align-content: center;
         justify-items: center;
+    }
+
+    /*formatting of hero image*/
+    .hero{
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+
+    .button-on-hero button{
+        position: absolute;
+        left: 75%;
+        top: 1200px
+    }
+
+    /*home formatting*/
+    #home{
+        /* border: solid black 3px; */
+        background-color: var(--background-color);
+        width: 98%;
+        margin-left: 1%;
+        display: grid;
+        grid-template-columns: 50% 1fr 1fr;
+
+    }
+
+    .events, .weather, .forecast{
+        /* border: solid yellow 4px; */
+        background-color: var(--primary-color);
+        padding-top: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .events{
+        margin-left: 1rem;
+        margin-right:0.5rem;
+    }
+
+    .weather{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .forecast{
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    }
+
+
+    #cards{
+        /* border: solid black 3px; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+
+    }
+
+    /*formatting footer*/
+    footer{
+        /* border: solid black 4px; */
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        width: 98%;
+        margin-left: 1%;
+        border-radius: 10px;
+        padding-bottom: 20px;
+    }
+
+    .project-info, .social-media, .course-info{
+        /* border: solid yellow 3px; */
+        padding-top: 0.5rem;
+    }
+
+    .project-info{
+        padding-left: 5rem;
+    }
+
+    .social-media{
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
     }
 }

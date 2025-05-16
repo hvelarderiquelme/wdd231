@@ -20,8 +20,8 @@ const displayMembers = (members) =>{
 
         companyName.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
-        phoneNumber.textContent = `${member.phone}`;
-        url.textContent = `${member.url}`;
+        phoneNumber.textContent = `Phone: ${member.phone}`;
+        url.textContent = `Website: ${member.url}`;
         logo.setAttribute("src", member.image);
         logo.setAttribute("alt", `${member.name}`);
         logo.setAttribute("loading", "lazy");
