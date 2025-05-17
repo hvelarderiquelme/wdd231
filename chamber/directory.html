@@ -16,9 +16,10 @@
     <link href="styles/directory.css" rel="stylesheet">
     <link href="styles/directory-large.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/directory-hambutton.js" defer></script>
     <script src="scripts/directory-last-modified.js" defer></script>
     <script src="scripts/directory-cards.js" defer></script>
+    <script src="scripts/directory-toggle-list-grid.js" defer></script>
     <title>Medicine Hat Chamber of Commerce | Directory page</title>
 </head>
 <body>
@@ -26,10 +27,10 @@
         <header>
             <img src="images/Logo1.webp" alt="Logo" width="50" height="50">
             <div>
-                <span><h3>Medicine Hat, Alberta</h3></span>
-                <span><h4>Chamber of Commerce</h4></span>
+                <h3>Medicine Hat, Alberta</h3>
+                <h4>Chamber of Commerce</h4>
             </div>
-            <button id="hamButton"></button>    
+            <button id="hamButton" aria-label="Hamburger-button"></button>    
         </header>    
 
         <nav id="animated-nav">   
@@ -86,7 +87,13 @@
                 </fieldset>
             </section>
         </div>
-        <div id="cards"></div>
+        
+        <div class="display-type">
+            <button id="grid"><img src="images/grid_icon.png" alt="grid-view"></button>
+            <button id="list"><img src="images/list_view_icon.png" alt="list-view"></button>
+        </div>    
+
+        <div id="cards" class="cards"></div>
     </main>
     <footer>
         <div class="project-info">
