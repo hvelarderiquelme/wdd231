@@ -1,0 +1,29 @@
+body{
+    background-color: #fafafa;
+}
+h1{
+    /* border: 2px green solid; */
+    color: blue;
+    text-align: center;
+}
+
+p, footer{
+    color: rgb(8, 53, 112);
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+    margin: 2rem 2rem;
+}
+
+figure{
+    border: solid grey 2px;
+    width: 20%;
+    margin-left: 40%;
+    border-radius: 10px;
+    justify-items: center;
+    color: blueviolet;
+    font-size: larger;
+    font-weight: 600;
+    background-color: rgb(224, 224, 187);
+}
+
