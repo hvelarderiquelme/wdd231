@@ -48,7 +48,8 @@ function displayResult(data){
     feelsLike.innerHTML = `Feels like: ${data.main.feels_like}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute("src", iconsrc);
-    icon.setAttribute("alt", data.weather[0].description);    
+    icon.setAttribute("alt", data.weather[0].description);
+    icon.setAttribute("loading","lazy");    
 }
 
 function displayforeCast(forecastData){
