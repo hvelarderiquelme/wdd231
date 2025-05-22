@@ -8,8 +8,8 @@ const tomorrow = document.querySelector("#tomorrow");
 const myKey ="d7a48202195b9902e57cca458e7ca0e3";
 const myLat ="50.01223013866542"; 
 const myLong="-110.6259411027306";
-const url = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
-const forecastUrl = `//api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric&cnt=22`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric&cnt=22`;
 
 
 async function apiFetch() {

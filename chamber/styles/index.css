@@ -228,6 +228,12 @@ main h1{
     cursor: pointer;
 }
 
+.spotlight{
+    /* border: solid green 3px; */
+    margin-top: 2rem;
+    text-align: center;
+}
+
 /*cards formatting in a grid*/
 .cards{
     /* border: solid black 4px; */

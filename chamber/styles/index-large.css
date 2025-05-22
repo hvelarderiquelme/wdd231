@@ -1,4 +1,4 @@
-@media only screen and (min-width: 640px){
+@media only screen and (min-width: 512px){
     body{
         background-color: var(--background-color);
     }

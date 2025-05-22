@@ -14,7 +14,7 @@ const displayMembers = (members) =>{
     
     // console.log(parseInt(numberOfSpotlights));
     for(i=1; i<=parseInt(numberOfSpotlights); i++){
-
+        // console.log(parseInt(numberOfSpotlights));
         let index = Math.random() * 7;
         let arrayElement = parseInt(index);
         let card = document.createElement("section");
@@ -23,7 +23,7 @@ const displayMembers = (members) =>{
         let phoneNumber = document.createElement("h4");
         let url = document.createElement("h4");
         let logo = document.createElement("img");
-        
+        // console.log('name=' + name);
         if(name != members[arrayElement].name){
         if (members[arrayElement].level == 3 || members[arrayElement].level == 2){
             companyName.textContent = `${members[arrayElement].name}`;
@@ -32,7 +32,7 @@ const displayMembers = (members) =>{
             phoneNumber.textContent = `Phone: ${members[arrayElement].phone}`;
             url.textContent = `Website: ${members[arrayElement].url}`;
             logo.setAttribute("src", members[arrayElement].image);
-            logo.setAttribute("alt", `${members[arrayElement].name}`);
+            logo.setAttribute("alt", members[arrayElement].name);
             logo.setAttribute("loading", "lazy");
 
             card.appendChild(companyName);
@@ -42,9 +42,11 @@ const displayMembers = (members) =>{
             card.appendChild(url);
 
             document.querySelector("#cards").appendChild(card);
+            name = members[arrayElement].name;
+            // console.log(name);
         }
     
-        name = members[arrayElement].name;
+        
     }
     }
     
