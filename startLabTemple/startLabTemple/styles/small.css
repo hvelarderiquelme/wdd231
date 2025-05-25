@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+
+#mydialog div{
+    display: grid;
+    grid-template-columns: auto 44px;
+    border-bottom: solid 1px green;
+    padding: 5px;
+    background-color: rgb(197, 194, 194);
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#mydialog{
+    background-color: rgb(163, 168, 168);
+    border-radius: 10px;
+    border: 1px;
+    opacity: 0.9;
+}

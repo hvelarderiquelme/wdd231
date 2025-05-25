@@ -156,6 +156,14 @@ button, .courses fieldset{
     
 }
 
+#course-details:modal{
+
+}
+
+#course-details:modal::backdrop{
+    
+}
+
 footer{
     background-color: var(--primary-color);
 
