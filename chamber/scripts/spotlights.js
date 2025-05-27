@@ -16,6 +16,7 @@ const displayMembers = (members) =>{
     for(i=1; i<=parseInt(numberOfSpotlights); i++){
         // console.log(parseInt(numberOfSpotlights));
         let index = Math.random() * 7;
+        // console.log(parseInt(index));
         let arrayElement = parseInt(index);
         let card = document.createElement("section");
         let companyName = document.createElement("h2");
