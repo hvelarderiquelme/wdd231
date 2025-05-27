@@ -114,10 +114,10 @@ ul.menuLinks{
     top: 55%;
     height: 50px;
     padding: 5px;
-    background-color: #93b9ca;
+    background-color: #d49348;
     border: solid #93b9ca;
     border-radius: 5px;
-    opacity: .7;
+    opacity: .9;
     font-weight: bolder;
     font-size: large;
 }
