@@ -41,11 +41,11 @@
         "level":2
     },
     {
-        "name":"Paradise Valley Golf Course",
-        "address": "90 Gehring Road Southeast, Medicine, AB T1B 2A5",
-        "phone":"(403) 526-3330",
-        "url":"https://www.instagram.com/paradisevalleymh/",
-        "image":"images/golf.webp",
+        "name":"Coulee Valley Golf Course",
+        "address": "90 Coulee Road Southeast, Medicine, AB T1B 2A5",
+        "phone":"(999) 999-9999",
+        "url":"https://www.abc.abc",
+        "image":"images/golf-cart.webp",
         "level":3
     },
     {

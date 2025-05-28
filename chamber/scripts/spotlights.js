@@ -1,7 +1,7 @@
 const directory = "data/members.json";
 const cards = document.querySelector("#cards");
 let numberOfSpotlights = Math.random() * 2 + 2;
-
+// console.log(parseInt(numberOfSpotlights));
 async function getMembersData(){
     const response = await fetch(directory);
     const data = await response.json();
