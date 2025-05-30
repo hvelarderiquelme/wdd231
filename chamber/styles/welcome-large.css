@@ -1,4 +1,6 @@
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 640px){
+
+    
 
     body{
         background-color: var(--background-color);
@@ -38,64 +40,36 @@
         align-content: center;
         justify-items: center;
     }
-
-    main{
-        /* border: solid 3px green; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #membership{
-        /* border: solid 3px black; */
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-
-    #membership section{
-        /* border: solid 3px black; */
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        align-content: center;
-        animation-name: membership;
-        animation-duration: 5s;
-        /* padding-top: 0; */
     
+    main h1{
+        text-align: center;
     }
-
-    #membership h2, #membership h4{
-        animation-name: membership-headers;
-        animation-duration: 4s;
-    }
-
-    @keyframes membership{
-        from {background-color: var(--background-color);}
-        to {background-color: var(--primary-color);};
-    }
-
-    @keyframes membership-headers{
-        from {color: var(--background-color);}
-        to {color: var(--text-color);}
-    }
-
-    .join-chamber{
-        /* border: solid 3px black; */
+    .information{
+        border: solid 3px var(--secondary-color);
         border-radius: 10px;
+        width: 50%;
+        margin-left:1rem;
+        padding: 2rem;
+        
     }
 
-    #show-info{
-        position: relative;
-        top: 20rem;
-        left: 25rem;
-        width: 28rem;
-
-        h2{
-            padding-left: 10px;
-        }
+    .information p{
+        padding-bottom: 10px;
+        font-size: x-large;
+        font-weight: 500;
     }
 
+    main h3, main h2{
+         /* border: solid 2px green; */
+         width: 50%;
+         margin-left: 1rem;
+         padding-left: 1rem;
+         margin: 2rem 2rem;
+    }
 
+    main h2{
+        text-align: center;
+    }
 
      /*formatting footer*/
     footer{

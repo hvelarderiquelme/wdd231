@@ -24,7 +24,11 @@ const displayMembers = (members) =>{
         let phoneNumber = document.createElement("h4");
         let url = document.createElement("h4");
         let logo = document.createElement("img");
-        // console.log('name=' + name);
+         console.log('i=' + i);
+        if(members[arrayElement].level == 1){
+            i++;
+            console.log("i=" + i);
+        }
         if(name != members[arrayElement].name){
         if (members[arrayElement].level == 3 || members[arrayElement].level == 2){
             companyName.textContent = `${members[arrayElement].name}`;
