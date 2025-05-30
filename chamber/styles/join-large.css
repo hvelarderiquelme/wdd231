@@ -70,7 +70,7 @@
     }
 
     @keyframes membership{
-        from {background-color: var(--background-color);}
+        from {background-color: var(--background-color)};
         to {background-color: var(--primary-color);};
     }
 
