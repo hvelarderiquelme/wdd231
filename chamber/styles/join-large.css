@@ -88,14 +88,12 @@
         position: relative;
         top: 20rem;
         left: 25rem;
-        width: 28rem;
-
-        h2{
-            padding-left: 10px;
-        }
+        width: 28rem;    
     }
 
-
+    #show-info h2{
+            padding-left: 10px;
+        }
 
      /*formatting footer*/
     footer{
