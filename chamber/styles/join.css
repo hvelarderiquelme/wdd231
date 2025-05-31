@@ -180,11 +180,28 @@ h1{
         padding: 0.5rem;
         justify-items:center;
         cursor: pointer;
+         animation-name: membership;
+        animation-duration: 5s;
     }
+
+#membership h2, #membership h4{
+        animation-name: membership-headers;
+        animation-duration: 4s;
+    }    
 
 #membership h2{
         padding: 1rem;
     }
+
+@keyframes membership{
+       from {background-color: var(--background-color);}
+       to {background-color: var(--primary-color);}
+}
+
+@keyframes membership-headers{
+    from {color: var(--background-color);}
+    to {color: var(--text-color);}
+}    
 
 
 /*formatting modal*/

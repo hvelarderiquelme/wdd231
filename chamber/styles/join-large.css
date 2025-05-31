@@ -58,25 +58,7 @@
         height: 300px;
         border-radius: 50%;
         align-content: center;
-        animation-name: membership;
-        animation-duration: 5s;
         /* padding-top: 0; */
-    
-    }
-
-    #membership h2, #membership h4{
-        animation-name: membership-headers;
-        animation-duration: 4s;
-    }
-
-    @keyframes membership{
-        from {background-color: var(--background-color);}
-        to {background-color: var(--primary-color);}
-    }
-
-    @keyframes membership-headers{
-        from {color: var(--background-color);}
-        to {color: var(--text-color);}
     }
 
     .join-chamber{
