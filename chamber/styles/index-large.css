@@ -48,15 +48,12 @@
         margin-top: 2rem;
     }
 
-    .button-on-hero button{
-        position: absolute;
-        left: 850px;
-        top: 1200px;
-        justify-items: center;
-        height: 100px;
-    }
-
     .button-on-hero a{
+    position: absolute;
+    left: 850px;
+    top: 1175px;
+    justify-items: center;
+    height: 100px;
     font-size: x-large;
     font-weight: bolder;
 }
