@@ -19,6 +19,7 @@
     <script src="scripts/hambutton.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
     <script src="scripts/memberships.js" defer></script>
+    <script src="scripts/registration.js" defer></script>
     <title>Registration Page for Medicine Hat Chamber of Commerce</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
         <form class="join-chamber" action="welcome.html" method="get">
             <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
             <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"> </label>
-            <label>Organizational Title <input type="text" name="organizational-title" title="Input should contain at least 7 characters." autocomplete="organization-title" 
+            <label>Organizational Title <input type="text" name="organizational-title" autocomplete="organization-title" title="Input should contain at least 7 characters.Alpha characters, hyphen and space. At least one upper case letter." autocomplete="organization-title" 
             pattern="(?=.*-)(?=.* )(?=.*[a-z])(?=.*[A-Z]).{7,}"></label>
             <label>E-mail <input type="email" name="email" required autocomplete="email" title="Your email" placeholder="yourname@gmail.com"></label>
             <label>Phone Number <input type="tel" name="phone" required title="Your Phone Number" autocomplete="tel"></label>
@@ -63,7 +64,7 @@
 
             <h3>Organization's Description</h3>
             <label><textarea name="description" title="organization-description"></textarea></label>
-            <label><input type="hidden" name="time-stamp" id="time"></label>
+            <input type="hidden" name="time-stamp" id="time">
             <input type="submit" value="Join Our Chamber">
         </form>
         </div>
@@ -108,6 +109,6 @@
             <p><span id="last-modified"></span></p>
         </div>
     </footer>
-    <script src="scripts/registration.js"></script>
+    
 </body>
 </html>
