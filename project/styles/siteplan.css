@@ -63,8 +63,6 @@ main h2,p{
     padding-bottom: 1rem;
 }
 
-
-
 footer{
     background-color: var(--header-footer);
     color: var(--header-footer-text);
