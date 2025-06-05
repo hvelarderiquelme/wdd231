@@ -14,10 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href="styles/discover.css" rel="stylesheet">
+    <link href="styles/discover-medium.css" rel="stylesheet">
     <link href="styles/discover-large.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <script src="scripts/hambutton.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/places.js" defer type="module"></script>
     <title>Discover Medicine Hat</title>
 </head>
 <body>
@@ -41,7 +43,14 @@
         </nav>
     </div>
     <main>
-
+        <dialog id="message">
+            <div>
+                <button>X</button>
+            </div>
+            <p></p>
+        </dialog>
+        </div>
+        <div id="cards"></div>
     </main>
      <footer>
         <div class="project-info">

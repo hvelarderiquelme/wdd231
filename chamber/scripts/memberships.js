@@ -20,16 +20,12 @@ const displayMemberships = (memberships) =>{
     memberships.forEach(membership => {
         let card = document.createElement("section");
         let membershipTitle = document.createElement("h2");
-        // let benefits = document.createElement("h4");
         let cost = document.createElement("h4");
-        // console.log(membership);
+        
         membershipTitle.textContent = `${membership.name}`;
-        // benefits.textContent = `Benefits:${membership.benefits}`;
         cost.textContent = `Cost: $${membership.fees}/mo `;
         card.appendChild(membershipTitle);
         card.addEventListener("click", () => {displayInfo(membership)});
-        
-        // card.appendChild(benefits);
         card.appendChild(cost);
         
         membershipCard.appendChild(card);
@@ -40,7 +36,6 @@ getMembershipsData();
 
 function displayInfo(membership){
     
-    // console.log(membership.name);
     title.innerHTML = membership.name;
     description.innerHTML = membership.description;
     benefits.innerHTML = `<h4>Benefits:</h4>${membership.benefits}`;

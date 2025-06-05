@@ -1,0 +1,61 @@
+{
+   "members":[
+    {
+        "name":"Smith Group",
+        "address": "360 1 Street Southeast, Medicine, AB T1A 0A6",
+        "phone":"(403) 527-1523",
+        "url":"http://www.smithgroupinc.ca/",
+        "image":"images/smithgroup.webp",
+        "level":1
+    },
+    {
+        "name":"Big Brothers Big Sisters",
+        "address": "1002 Allowance Avenue SE, Medicine, AB T1A 3G8",
+        "phone":"(403) 527-6640",
+        "url":"http://www.bbbsmedhat.ca/",
+        "image":"images/big-brothers-sisters.webp",
+        "level":2
+    },
+    {
+        "name":"Station Coffee Co",
+        "address": "644 2 Street Southeast, Medicine Hat, AB T1A 0C9",
+        "phone":"(403) 529-1115",
+        "url":"http://www.stationcoffeeco.ca/",
+        "image":"images/station.webp",
+        "level":3
+    },
+    {
+        "name":"Murray Chevrolet Cadillac Medicine Hat",
+        "address": "1270 Trans Canada Way South East, Medicine, AB T1B 1J5",
+        "phone":"(403) 527-1141",
+        "url":"http://www.murraychev.ca/",
+        "image":"images/chevy.webp",
+        "level":3
+    },
+    {
+        "name":"Safety Connections",
+        "address": "1007 Factory Street Souteast, Medicine, AB T1A 1X8",
+        "phone":"(403) 528-3779",
+        "url":"http://www.safetyconnections.ca/",
+        "image":"images/safety.webp",
+        "level":2
+    },
+    {
+        "name":"Paradise Valley Golf Course",
+        "address": "90 Gehring Road Southeast, Medicine, AB T1B 2A5",
+        "phone":"(403) 526-3330",
+        "url":"https://www.instagram.com/paradisevalleymh/",
+        "image":"images/golf.webp",
+        "level":1
+    },
+    {
+        "name":"South East Alberta Watershed Alliance",
+        "address": "41-419 3rd Street Southeast, Medicine, AB T1A 0G9",
+        "phone":"(403) 580-8980",
+        "url":"http://www.seawa.ca/",
+        "image":"images/water.webp",
+        "level":2
+    }
+    
+   ]
+}

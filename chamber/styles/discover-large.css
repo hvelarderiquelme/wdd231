@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 1024px){
 
     body{
         background-color: var(--background-color);
@@ -37,6 +37,35 @@
         width: 100%;
         align-content: center;
         justify-items: center;
+    }
+
+    /*formatting main*/
+    main #cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    figure{
+        border: solid var(--primary-color);
+        border-radius: 10px;
+    }
+
+    figure h2, #cost, address{
+        width: 30rem;
+        align-content: center;
+    }
+
+    figure input{
+        margin-left: 12rem;
+    }
+
+    /*formatting modal message*/
+
+    #message{
+        top: 20rem;
+        left: 40rem;
+        background-color: var(--primary-color);
+        width: 35rem;
     }
 
     /*formatting footer*/
