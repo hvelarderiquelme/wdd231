@@ -113,6 +113,7 @@ figure{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     display: grid;
+    justify-items: center;
     grid-template-areas: 
     "name"
     "photo"
@@ -127,13 +128,17 @@ figure h2{
     /* border: 3px solid pink; */
     grid-area: name;
     text-align: center; 
+    margin: 1rem;
 }
 
 figure img{
     /* border: solid yellow 3px; */
     grid-area: photo;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 300px;
     height: 200px;
+    margin-bottom: 1rem;
     
 }
 
@@ -147,12 +152,14 @@ figure #description{
 
 figure #cost{
     grid-area: cost;
+    padding-bottom: 1rem;
 }
 
 figure #cost, address{
     /* border: solid pink 3px; */
     font-size: larger;
     font-weight: 600;
+    margin: 0 1rem;
 }
 
 figure input{
@@ -162,28 +169,34 @@ figure input{
     height: 2rem;
     border-radius: 6px;
     background-color: var(--primary-color);
-    margin-left: 7rem;
+    margin: 2rem;
+    cursor: pointer;
    
+}
+
+figure input:hover{
+    background-color: rgba(77, 170, 100, 0.2);
 }
 
 /*formatting modal message*/
 
 #message{
     position: relative;
-    top: 80rem;
+    top: 40rem;
     left: 1rem;
-    background-color: var(--background-color);
+    background-color: var(--primary-color);
     border-radius: 10px;
     opacity: 0.9;
     padding: 0;
-    border: 2px solid darkslategrey;
+    border: 3px solid darkslategrey;
 }
 
 #message div{
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
+    display: grid;
+    grid-template-columns: auto 50px;
+    margin-top: 0.5rem;   
+    padding-bottom: 0.5rem;
+    border-bottom: darkslategray inset;
 }
 
 #message button{
@@ -201,7 +214,11 @@ figure input{
     padding: 2rem 1rem;
     font-size: larger;
     font-weight: 600;
-    background-color: (var(--primary-color));
+}
+
+#message h2{
+    /* border: 2px solid grey; */
+    text-align: center;
 }
 
 /*footer formatting*/

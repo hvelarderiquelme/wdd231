@@ -26,7 +26,7 @@ export const places = [
     "address": "1366 Brier Park Dr NW, Medicine Hat, AB T1C 1Z7",
     "description": "A local brewery offering a variety of craft beers in a cozy setting.",
     "cost": "Varies by beer selection",
-    "photo_url": "images/teepee.webp"
+    "photo_url": "images/brewing.webp"
   },
   {
     "name": "Echo Dale Regional Park",

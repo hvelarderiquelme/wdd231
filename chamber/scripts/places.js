@@ -3,6 +3,7 @@ import {places} from "../data/places.mjs"
 const message = document.querySelector("#message");
 const description = document.querySelector("#message p");
 const closeButton = document.querySelector("#message button");
+const title = document.querySelector("#message h2");
 
 closeButton.addEventListener("click", () => {message.close()});
 
@@ -43,7 +44,7 @@ displayPlaces(places);
 
 function modalDescription(place){
     
-    // title.innerHTML = membership.name;
+    title.innerHTML = place.name;
     description.innerHTML = place.description;
     // benefits.innerHTML = `<h4>Benefits:</h4>${membership.benefits}`;
     message.showModal();

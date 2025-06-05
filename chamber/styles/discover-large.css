@@ -55,16 +55,12 @@
         align-content: center;
     }
 
-    figure input{
-        margin-left: 12rem;
-    }
-
-    /*formatting modal message*/
+   /*formatting modal message*/
 
     #message{
         top: 20rem;
         left: 40rem;
-        background-color: var(--primary-color);
+       
         width: 35rem;
     }
 
