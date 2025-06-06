@@ -1,4 +1,4 @@
-localStorage.setItem("numVisits-ls",0);// reset the coount to 0
+//localStorage.setItem("numVisits-ls",0);// reset the coount to 0
 /*display element variabke*/
 const msToDays = 86400000;
 const visits = document.querySelector("#visits");
@@ -42,8 +42,6 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 function modalVisit(days, numVisits){
-    console.log("days: " + days);
-    console.log("numVisits: " + numVisits);
     
     if((days == 0) && (numVisits == 1)){
         h2.innerHTML = `Welcome!`;
