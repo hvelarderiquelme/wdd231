@@ -7,13 +7,13 @@ export const places = [
     "cost": "Free",
     "photo_url": "images/teepee.webp"
   },
-  // {
-  //   "name": "Medalta in the Historic Clay District",
-  //   "address": "713 Medalta Ave SE, Medicine Hat, AB",
-  //   "description": "A living, working museum showcasing the city's industrial past with tours of iconic beehive kilns and contemporary ceramic art.",
-  //   "cost": "Adults $15, Seniors $13, Youth/Students $11, Children under 6 Free",
-  //   "photo_url": "images/medalta.webp"
-  // },
+  {
+    "name": "Medalta in the Historic Clay District",
+    "address": "713 Medalta Ave SE, Medicine Hat, AB",
+    "description": "A living, working museum showcasing the city's industrial past with tours of iconic beehive kilns and contemporary ceramic art.",
+    "cost": "Adults $15, Seniors $13, Youth/Students $11, Children under 6 Free",
+    "photo_url": "images/medalta.webp"
+  },
   {
     "name": "Red Rock Coulee",
     "address": "Approximately 54 km southwest of Medicine Hat, near Highway 887",
