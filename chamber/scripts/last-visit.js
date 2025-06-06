@@ -8,13 +8,9 @@ const closeButton = document.querySelector("#visits button");
 
 closeButton.addEventListener("click", () => {visits.close()});
 //calculate future days for testing purposes
- const current = Date.now();
- const futureDays = 13;//change the number of days into the future
- const futureTime = current + (futureDays * msToDays);
-
-    
-
-
+//  const current = Date.now();
+//  const futureDays = 13;//change the number of days into the future
+//  const futureTime = current + (futureDays * msToDays);
 
 /*This gets the stored value of the numVisits-ls KEY. If it doesn't exist, then numVisits variable is given 0 as value.*/
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
@@ -28,8 +24,8 @@ if(numVisits !== 0){
     const firstVisit = localStorage.getItem("firstVisit");
     let numberOfDays;
 
-    numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
-    // numberOfDays = (now - firstVisit)/msToDays;
+    // numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
+    numberOfDays = (now - firstVisit)/msToDays;
     modalVisit(numberOfDays, numVisits); 
 }
 else{
@@ -39,12 +35,10 @@ else{
     
 }
 
-
-
 /*Increment the number of visits by one.*/
 numVisits++;
 
-/*Store the nue visits total in local storage*/
+/*Store the no of visits total in local storage*/
 localStorage.setItem("numVisits-ls", numVisits);
 
 function modalVisit(days, numVisits){
