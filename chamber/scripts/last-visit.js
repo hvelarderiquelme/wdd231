@@ -1,4 +1,4 @@
-// localStorage.setItem("numVisits-ls",0);// reset the coount to 0
+localStorage.setItem("numVisits-ls",0);// reset the coount to 0
 /*display element variabke*/
 const msToDays = 86400000;
 const visits = document.querySelector("#visits");
@@ -24,8 +24,8 @@ if(numVisits !== 0){
     const firstVisit = localStorage.getItem("firstVisit");
     let numberOfDays;
 
-    // numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
-    numberOfDays = (now - firstVisit)/msToDays;
+     numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
+    //numberOfDays = (now - firstVisit)/msToDays;
     modalVisit(numberOfDays, numVisits); 
 }
 else{
