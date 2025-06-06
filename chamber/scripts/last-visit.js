@@ -45,7 +45,7 @@ function modalVisit(days, numVisits){
         p.innerHTML = `Let us know if you have any questions.`;
     }
     else if(parseInt(days) < 1){
-        h2.innerHTML = `Back so soon!  Awesome!`;
+        h1.innerHTML = `Back so soon!  Awesome!`;
         p.innerHTML = `We hope you enjoy your visit. `;
     }else if(parseInt(days) == 1){
             h1.innerHTML = `Welcome back!`;
