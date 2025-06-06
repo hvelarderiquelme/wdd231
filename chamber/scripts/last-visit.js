@@ -9,7 +9,7 @@ const closeButton = document.querySelector("#visits button");
 closeButton.addEventListener("click", () => {visits.close()});
 //calculate future days for testing purposes
 //  const current = Date.now();
-//  const futureDays = 13;//change the number of days into the future
+//  const futureDays = 1;//change the number of days into the future
 //  const futureTime = current + (futureDays * msToDays);
 
 /*This gets the stored value of the numVisits-ls KEY. If it doesn't exist, then numVisits variable is given 0 as value.*/
@@ -17,14 +17,14 @@ let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 
 /*determine if this is the first visit*/
-
+console.log(numVisits);
 if(numVisits !== 0){
     localStorage.setItem("now", Date.now());
     const now = localStorage.getItem("now");
     const firstVisit = localStorage.getItem("firstVisit");
     let numberOfDays;
 
-    // numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
+    //numberOfDays = (futureTime - firstVisit)/msToDays;//to simulate access to page at a future day
     numberOfDays = (now - firstVisit)/msToDays;
     modalVisit(numberOfDays, numVisits); 
 }
@@ -42,13 +42,14 @@ numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
 function modalVisit(days, numVisits){
+    console.log("days: " + days);
+    console.log("numVisits: " + numVisits);
     
     if((days == 0) && (numVisits == 1)){
         h2.innerHTML = `Welcome!`;
         p.innerHTML = `Let us know if you have any questions.`;
     }
-
-    if(parseInt(days) < 1){
+    else if(parseInt(days) < 1){
         h2.innerHTML = `Back so soon!  Awesome!`;
         p.innerHTML = `Close this window to continue.`;
     }else if(parseInt(days) == 1){
