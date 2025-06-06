@@ -50,12 +50,15 @@ function modalVisit(days, numVisits){
 
     if(parseInt(days) < 1){
         h2.innerHTML = `Back so soon!  Awesome!`;
+        p.innerHTML = `Close this window to continue.`;
     }else if(parseInt(days) == 1){
             h2.innerHTML = `You last visited ${parseInt(days)} day ago.`;
+            p.innerHTML = `Close this window to continue.`;
         }
         else
         {
             h2.innerHTML = `You last visited ${parseInt(days)} days ago.`;
+            p.innerHTML = `Close this window to continue.`;
         }
     
     visits.showModal();

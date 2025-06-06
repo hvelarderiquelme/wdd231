@@ -45,6 +45,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /*formatting figure*/
+
     figure{
         border: solid var(--primary-color);
         border-radius: 10px;
@@ -53,6 +55,10 @@
     figure h2, #cost, address{
         width: 30rem;
         align-content: center;
+    }
+
+    figure img:hover{
+        filter: saturate(20%);
     }
 
    /*formatting modal message*/

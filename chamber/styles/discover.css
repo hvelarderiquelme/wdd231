@@ -179,11 +179,20 @@ figure input:hover{
 }
 
 /*formatting modal message*/
+#visits{
+    position: relative;
+    top: 10rem;
+    left: 1.5rem;
 
-#message, #visits{
+}
+
+#message{
     position: relative;
     top: 40rem;
     left: 1rem;
+}
+
+#message, #visits{
     background-color: var(--primary-color);
     border-radius: 10px;
     opacity: 0.9;
