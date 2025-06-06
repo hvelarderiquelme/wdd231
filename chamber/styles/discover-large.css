@@ -113,4 +113,9 @@
         display: flex;
     }
 
+    .social-media img{
+        width: 50px;
+        height: auto;
+    }
+
 }
