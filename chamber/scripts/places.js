@@ -46,7 +46,6 @@ function modalDescription(place){
     
     title.innerHTML = place.name;
     description.innerHTML = place.description;
-    // benefits.innerHTML = `<h4>Benefits:</h4>${membership.benefits}`;
     message.showModal();
     
 }

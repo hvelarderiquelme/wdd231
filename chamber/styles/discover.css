@@ -180,7 +180,7 @@ figure input:hover{
 
 /*formatting modal message*/
 
-#message{
+#message, #visits{
     position: relative;
     top: 40rem;
     left: 1rem;
@@ -191,7 +191,7 @@ figure input:hover{
     border: 3px solid darkslategrey;
 }
 
-#message div{
+#message div, #visits div{
     display: grid;
     grid-template-columns: auto 50px;
     margin-top: 0.5rem;   
@@ -199,7 +199,7 @@ figure input:hover{
     border-bottom: darkslategray inset;
 }
 
-#message button{
+#message button, #visits button{
     border: 2px solid grey;
     border-radius: 8px;
     width: 44px;
@@ -210,13 +210,13 @@ figure input:hover{
     background-color: var(--background-color);
 }
 
-#message p{
+#message p, #visits p{
     padding: 2rem 1rem;
     font-size: larger;
     font-weight: 600;
 }
 
-#message h2{
+#message h2, #visits h2{
     /* border: 2px solid grey; */
     text-align: center;
 }
