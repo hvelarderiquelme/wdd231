@@ -1,4 +1,4 @@
-localStorage.setItem("numVisits-ls",0);// reset the coount to 0
+// localStorage.setItem("numVisits-ls",0);// reset the coount to 0
 /*display element variabke*/
 const msToDays = 86400000;
 const visits = document.querySelector("#visits");
