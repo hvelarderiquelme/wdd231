@@ -2,7 +2,7 @@ localStorage.setItem("numVisits-ls",0);// reset the coount to 0
 /*display element variabke*/
 const msToDays = 86400000;
 const visits = document.querySelector("#visits");
-const h2 = document.querySelector("#visits h2");
+const h1 = document.querySelector("#visits h1");
 const p = document.querySelector("#visits p");
 
 
@@ -41,19 +41,19 @@ localStorage.setItem("numVisits-ls", numVisits);
 function modalVisit(days, numVisits){
     
     if((days == 0) && (numVisits == 1)){
-        h2.innerHTML = `Welcome!`;
+        h1.innerHTML = `Welcome!`;
         p.innerHTML = `Let us know if you have any questions.`;
     }
     else if(parseInt(days) < 1){
         h2.innerHTML = `Back so soon!  Awesome!`;
         p.innerHTML = `We hope you enjoy your visit. `;
     }else if(parseInt(days) == 1){
-            h2.innerHTML = `Welcome back!`;
+            h1.innerHTML = `Welcome back!`;
             p.innerHTML = `You last visited ${parseInt(days)} day ago.`;
         }
         else
         {
-            h2.innerHTML = `Welcome back!`;
+            h1.innerHTML = `Welcome back!`;
             p.innerHTML = `You last visited ${parseInt(days)} days ago.`;
         }
     
