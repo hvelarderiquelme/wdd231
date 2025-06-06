@@ -63,10 +63,28 @@
 
    /*formatting modal message*/
 
-    #message, #visits{
+    #message{
         top: 20rem;
         left: 40rem;
         width: 35rem;
+    }
+
+    /*formatting page visits message*/
+    #visits{
+        width: 50%;
+        margin-left: 25%;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        border: 3px solid darkslategrey;
+        text-align: center;
+    }
+    #visits h2{
+        padding-bottom: 1rem;
+    }
+
+    #visits p{
+        font-weight: 500;
+        font-size: large;
     }
 
     /*formatting footer*/
