@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the main page for the final project for course WDD231. Wtiters Club.">
+    <meta name="author" content="Horacio Velarde Riquelme">
+    <meta property="og:title" content="Main | Medicine Hat, AB Writers Club">
+    <meta property="og:description" content="Learn and share writing skills with other local writers in the Medicine Hat area.">
+    <meta property="og:image" content="https://hvelarderiquelme.github.io/wdd231/project/images/MedHat.jpg">
+    <meta property="og:url" content="https://hvelarderiquelme.github.io/wdd231/project/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/index-large.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/events.js" type="module"></script>
+    <script src="scripts/hambutton.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/news.js" defer></script>
+    <title>Final Project WDD231 | Home Page</title>
+</head>
+<body>
+     <div class="header-large">
+        <header>
+            <img src="images/writers_logo.webp" alt="Logo" width="50" height="50">
+            <div>
+                <h3>Medicine Hat, Alberta</h3>
+                <h4>Writers Club</h4>
+            </div>
+            <button id="hamButton" aria-label="hamburger-button"></button>    
+        </header>    
+
+        <nav id="animated-nav">   
+            <ul class="menuLinks">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="join.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>"The faster you blurt, the more swiftly you write, the most honest you are" <span>-Ray Bradbury</span></h1>   
+        </div>
+    </div>
+
+    <main>
+        <div class="events-title">
+            <h1>Coming Events</h1>
+            <div id="events"></div>
+        </div>
+        <div class="news-title">    
+            <h1>World News</h1>
+            <div id="news"></div>
+        </div>
+            
+            
+        
+    </main>
+     <footer>
+        <div class="project-info">
+            <h4>Medicine Hat Chamber of Commerce</h4>
+            <p>133 East Glen Dr. SE</p>
+            <p>Medicine Hat, Alberta Canada</p>
+            <p>info@chamber.org</p>
+            <p>(999) 999-9999</p>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com">
+                <img src="images/fb.jfif" alt="facebook-logo">
+            </a>    
+            <a href="https://twitter.com">
+                <img src="images/tw.png" alt="twitter-logo">
+            </a>    
+            <a href="https://instagram.com">
+                <img src="images/in.jfif" alt="instagram-logo">
+            </a>    
+        </div>
+        <div class="course-info">
+            <h4>WDD231 Class Project</h4>
+            <p>Horacio Velarde Riquelme</p>
+            <p><span id="current-year"></span></p>
+            <p><span id="last-modified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
