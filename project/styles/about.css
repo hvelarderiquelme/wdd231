@@ -139,30 +139,61 @@ main, .hero-text{
     color: white;
 }
 
+.hero-text button{
+    position: absolute; 
+    top: 200px;
+    left: 45%;
+    background-color: var(--header-footer);  
+    width: 140px;
+    height: 70px;
+    color: var(--body);
+    font-family: "Caveat";
+    font-size: xx-large;
+    border-radius: 150%;
+    border: solid var(--body);
+}
+
+.hero-text button a{
+    text-decoration: none;
+    color: var(--body);
+}
+
+.hero-text button:hover{
+        cursor: pointer;
+        background-color: rgba(66, 136, 174, 0.9);
+    }
+
 main{
     background-color: var(--main);
     font-family: "Courier prime";
 }
 
-#description{
-    background-color: var(--body);
-    color: var(--main);
-    width: 98%;
-    margin-left: 1%;
-    /* padding: 1rem; */
-}
-
-#description h1{
+#description h1, #writer-type h1{
     background-color: var(--main);
     color: var(--body);
     padding: 2rem;
     text-align: center;
 }
 
-#description p{
+#description, #writer-cards{
+    background-color: var(--body);
+    color: var(--main);
+    width: 98%;
+    margin-left: 1%;
+}
+
+#description p, #writer-cards p{
     padding: 1rem;
     text-align: center;
     font-size: large;
+}
+
+#writer-cards h2{
+    background-color: var(--main);
+    color: var(--body);
+    text-align: center;
+    padding: 1.5rem 0;
+    border: solid var(--body)
 }
 
 /*footer formatting*/

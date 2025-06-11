@@ -1,4 +1,4 @@
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 1024px){
     body{
         background-color: var(--body);
     }
@@ -55,14 +55,65 @@
 
     /*hero image formatting*/
    .hero-image{
-    width: 98%;
-    height: 80%;
-    margin-left: 1%;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1rem;
+        width: 98%;
+        height: 80%;
+        margin-left: 1%;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 1rem;
    }
 
+   .hero-text button{
+    position: absolute; 
+    top: 200px;
+    left: 45%;
+}
+
+    
+
+   /*formatting main*/
+
+   main{
+        width: 98%;
+        margin-left: 1%;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        border: solid var(--main);
+        padding-bottom: 3rem;
+   }
+   
+   #writer-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;   
+         
+   }
+
+   #writer-cards figure{
+        display: grid;
+        grid-template-columns: 45% auto;
+        height: 30rem;
+        margin-bottom: 3rem;
+        border: solid var(--main);
+        margin: 5px;
+
+   }
+
+   #writer-cards h2{
+    grid-column: 1 / 3;
+    height: 2rem;
+   }
+
+   #writer-cards img{
+        padding: 1rem;
+   }
+
+   #writer-cards p{
+        padding: 1rem;
+        text-align: left;
+
+   }
+
+   
 
      /*formatting footer*/
     footer{

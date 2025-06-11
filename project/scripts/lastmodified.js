@@ -7,7 +7,7 @@ const date = new Date(document.lastModified);
 let year = currentYear.getFullYear();
 const spanElmt = document.createElement("span");
 
-document.querySelector('#current-year').innerHTML = '&COPY;' +  year + ' Medicine Hat Chamber Of Commerce';
+document.querySelector('#current-year').innerHTML = '&COPY;' +  year + ' Medicine Hat Writers Club';
 document.querySelector('#last-modified').innerHTML = date;
 ElmtYear.appendChild(spanElmt);
 ElmtLastModified.appendChild(spanElmt);   
