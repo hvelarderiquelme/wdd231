@@ -14,13 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="styles/join.css" rel="stylesheet">
-    <link href="styles/join-medium" rel="style">
     <link href="styles/join-large.css" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/cards.js" defer></script>
     <script src="scripts/hambutton.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
-    <title>Final Project WDD231</title>
+    <script src="scripts/join-date.js" defer></script>
+    <title>Final Project WDD231 | Join Us Page</title>
 </head>
 <body>
      <div class="header-large">
@@ -42,6 +41,42 @@
         </nav>
     </div>
 
+     <main>
+        <div>
+        <h1>Join Our Club</h1>
+
+        <form class="join-club" action="welcome.html" method="get">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"> </label>
+            <label>E-mail <input type="email" name="email" required autocomplete="email" title="Your email" placeholder="yourname@gmail.com"></label>
+            <label>Phone Number <input type="tel" name="phone" required title="Your Phone Number" autocomplete="tel"></label>
+
+            <h3>What is your writing genre?</h3>
+            <label><input type="radio" name="skill" value="memoirist" checked> Memoirist</label>
+            <label><input type="radio" name="skill" value="biographer"> Biographer</label>
+            <label><input type="radio" name="skill" value="archivist"> Archivist</label>
+            <label><input type="radio" name="skill" value="poet"> Poet</label>
+            <label><input type="radio" name="skill" value="columnist"> Columnist</label>
+            <label><input type="radio" name="skill" value="storyteller"> Storyteller</label>
+            <label><input type="radio" name="skill" value="other"> Other</label>
+
+            <input type="hidden" name="time-stamp" id="time">
+            <input type="submit" value="Join Our Chamber">
+        </form>
+        </div>
+        <div>
+        <h1 id="membership-title">Membership types</h1>
+        <div id="membership"></div>
+        <dialog id="show-info">
+            <div>
+                <h2></h2>
+                <button>X</button>
+            </div>
+            <h3></h3>
+            <p></p>
+        </dialog>
+        </div>
+    </main>
 
      <footer>
         <div class="project-info">
