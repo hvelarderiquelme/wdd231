@@ -70,10 +70,11 @@
    }
  
     .hero-text button{
-        position: absolute; 
-        top: 200px;
-        left: 45%;
+    position: absolute; 
+    top: 200px;
+    left: 45%;
     }
+    
    /* formatting main */
    main{
     display: grid;

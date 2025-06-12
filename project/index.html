@@ -44,11 +44,33 @@
     <div class="hero-image">
         <div class="hero-text">
             <h1>"The faster you blurt, the more swiftly you write, the most honest you are" <span>-Ray Bradbury</span></h1>
-            <button><a href="join.html">Event Registration</a></button>   
+            <button><a href="join.html">Join Us</a></button>   
         </div>
     </div>
 
     <main>
+        <dialog id="modal">
+            <div id="banner">
+                <h2>These events are for club members only.</h2>
+                <button>X</button>
+            </div>
+            <div id="invitation">
+                <p>If you are not a member yet, please <a href="join.html">click here</a> to join our Club.</p>
+                <p>If you are already a member, please enter the following information.</p>
+            </div>
+            <form action="registered.html" method="get">
+                <label>Name: <input type="text" name="first" required autocomplete="given-name" title="Enter your firstname"></label>
+                <label>Lastname: <input type="text" name="last" required autocomplete="family-name" title="Enter your lastname"></label>
+                <label>E-mail: <input type="text" name="email" required autocomplete="email" title="Enter your email address"></label>
+                <input type="hidden" name="event" id="hiddenName">
+                <input type="hidden" name="date" id="hiddenDate">
+                <input type="hidden" name="time" id="hiddenTime">
+                <input type="submit" value="Register" id="book">
+                
+            </form>
+            
+        </dialog>
+
         <div class="events-title">
             <h1>Coming Events</h1>
             <div id="events"></div>
@@ -56,10 +78,7 @@
         <div class="news-title">    
             <h1>World News</h1>
             <div id="news"></div>
-        </div>
-            
-            
-        
+        </div>    
     </main>
      <footer>
         <div class="project-info">

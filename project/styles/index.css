@@ -150,12 +150,12 @@ main, .hero-text{
     top: 200px;
     left: 45%;
     background-color: var(--header-footer);  
-    width: 150px;
-    height: 90px;
+    width: 140px;
+    height: 70px;
     color: var(--body);
     font-family: "Caveat";
-    font-size: 1.5rem;
-    border-radius: 180%;
+    font-size: xx-large;
+    border-radius: 150%;
     border: solid var(--body);
 }
 
@@ -167,7 +167,7 @@ main, .hero-text{
 .hero-text button:hover{
         cursor: pointer;
         background-color: rgba(66, 136, 174, 0.9);
-}
+    }
 
 /*main formatting*/
 
@@ -204,6 +204,113 @@ main h1{
     padding-top: 10px;
     font-size: medium;
     padding-left: 5px;
+}
+
+#registration{
+    width: 30%;
+    margin-left: 35%;
+    justify-items: center;
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    font-family: "Courier prime";
+    font-size: large;
+    background-color: var(--main);
+    color: var(--body);
+    border: solid var(--main);
+}
+
+#registration:hover{
+    cursor: pointer;
+    background-color: var(--body);
+    color: var(--main);
+}
+
+/*formatting modal*/
+
+#modal{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 60rem;
+    left: 10rem;
+    background-color: var(--body);
+    border-radius: 10px;
+    border: 1px;
+    padding: 0;
+    color: var(--main);
+    border: solid var(--main) 4px;
+}
+
+#banner button{
+    background-color: var(--main);
+    color: var(--body);
+    width: 40px;
+    height: 40px;
+    font-family: "Courier prime";
+    font-size: xx-large;
+    border: solid var(--main) 1px;
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: auto 60px;
+    border-bottom: solid var(--main) 2px;
+    padding: 5px;
+    background-color: var(--body);
+    width: 100%;    
+}
+
+#banner h2{
+    align-content: center;
+    text-align: center;
+}
+
+#invitation{
+  padding: 1rem;
+}
+
+#invitation a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    color: var(--main);
+}
+
+#modal form{
+    border: none;
+    margin: 3px;
+    padding: 1rem;
+}
+
+#modal input[type=text], 
+#modal input[type=email]{
+    display: block;
+    color: var(--main);
+    font-size: large;
+    border: solid var(--main);
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+#modal input[type=submit]{
+    width: 20%;
+    margin-left: 40%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: solid var(--main);
+    background-color: var(--main);
+    color: var(--body);
+    font-family: "Courier prime";
+    font-size: large;
+}
+
+#modal input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--body);
+    color: var(--main);
 }
 
 /*News section formatting*/

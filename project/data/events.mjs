@@ -4,7 +4,7 @@ export const events = [
   {
     "event": "Write-a-Thon Challenge",
     "date": "2025-08-02",
-    "time": "10:00 AM – 1:00 PM",
+    "time": "10:00 AM to 1:00 PM",
     "description": "Nonstop writing session with timed prompts every 30 minutes.",
     "goal": "Build endurance and fight writer’s block."
   },

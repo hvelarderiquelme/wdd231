@@ -7,7 +7,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok){
             const articles = await response.json();
-            // console.log(articles); //testing only
+            console.log(articles); //testing only
             displayNews(articles); //uncomment when ready
         }else{
             throw Error(await response.text());
@@ -40,4 +40,4 @@ function displayNews(articles){
 };
 
 apiFetch();
-//displayNews();
+// displayNews();
