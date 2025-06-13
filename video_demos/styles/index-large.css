@@ -53,29 +53,83 @@
         font-size: xx-large;
     }
 
-    nav li.current-menu-item{
-        background-color: rgba(0,0,0,0.2);
-        color: var(--text);
-        }
-
-    nav ul.menuLinks a:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    nav ul.menuLinks li a{
+    /* border: solid pink 3px; */
+    width: 7rem;
+    justify-items: center;
     }
 
-    /*formatting main*/  
-    #registration{
-        margin-left: 5%;
-        justify-items: center;
+   /*hero image formatting*/
+   .hero-image{
+    width: 98%;
+    height: 80%;
+    margin-left: 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+   }
+ 
+    .hero-text a{
+    position: absolute; 
+    top: 200px;
+    left: 45%;
+    }
+    
+   /* formatting main */
+   main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 98%;
+    margin-left: 1%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    
+   }
+
+   #events{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   }
+
+   #events section{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 95%;
+    margin: 1rem;
+   }
+
+   #news{
+    width: 80%;
+    margin-left: 10%;
+   }
+
+   #news section{
+    /* height: 12rem; */
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    text-align: center;
+    /* border: solid var(--header-footer) 5px; */
+   }
+
+   #registration{
+    width: 30%;
+    margin-left: 35%;
+    justify-items: center;
     }
 
-    .join-club{
-        width: 30%;
-        margin-left: 35%;   
+    #modal{
+        position: relative;
+        top: 71rem;
+        left: 20rem;
     }
 
-    .join-club input[type=submit]{
-        /* border: solid black 5px; */
-        margin-left: 12rem;
+    #modal input[type=submit]{
+        width: 20%;
+        margin-left: 40%;
+        padding: 0.5rem;
     }
 
      /*formatting footer*/

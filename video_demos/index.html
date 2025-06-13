@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="This is the 'Welcome to our club' page after registering to the club. Final project for course WDD231. Wtiters Club.">
+    <meta name="description" content="This is the main page for the final project for course WDD231. Wtiters Club.">
     <meta name="author" content="Horacio Velarde Riquelme">
-    <meta property="og:title" content="Welcome | Medicine Hat, AB Writers Club">
+    <meta property="og:title" content="Main | Medicine Hat, AB Writers Club">
     <meta property="og:description" content="Learn and share writing skills with other local writers in the Medicine Hat area.">
     <meta property="og:image" content="https://hvelarderiquelme.github.io/wdd231/project/images/MedHat.jpg">
-    <meta property="og:url" content="https://hvelarderiquelme.github.io/wdd231/project/welcome.html">
+    <meta property="og:url" content="https://hvelarderiquelme.github.io/wdd231/project/index.html">
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="styles/welcome.css" rel="stylesheet">
-    <link href="styles/welcome-large.css" rel="stylesheet">
+    <link href="" rel="stylesheet">
+    <link href="" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/events.js" type="module"></script>
     <script src="scripts/hambutton.js" defer></script>
     <script src="scripts/lastmodified.js" defer></script>
-    <script src="scripts/join-info.js" defer></script>
-    <title>Final Project WDD231</title>
+    <script src="scripts/news.js" defer></script>
+    <title>Final Project WDD231 | Home Page</title>
 </head>
 <body>
      <div class="header-large">
@@ -34,19 +35,51 @@
 
         <nav id="animated-nav">   
             <ul class="menuLinks">
-                <li><a href="index.html">Home</a></li>
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="join.html">Join Us</a></li>
             </ul>
         </nav>
     </div>
-<main>
-    <h2>Welcome! You have been registered as a club member.</h2>
-    <h2>These are your details.</h2>
-    <div class="member-info"></div>
-    <h2>Thank you!</h2>
-</main>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>"The faster you blurt, the more swiftly you write, the most honest you are" <span>-Ray Bradbury</span></h1>
+            <a href="join.html">Join Us</a>  
+        </div>
+    </div>
 
+    <main>
+        <dialog id="modal">
+            <div id="banner">
+                <h2>These events are for club members only.</h2>
+                <button>X</button>
+            </div>
+            <div id="invitation">
+                <p>If you are not a member yet, please <a href="join.html">click here</a> to join our Club.</p>
+                <p>If you are already a member, please enter the following information.</p>
+            </div>
+            <form action="registered.html" method="get">
+                <label>Name: <input type="text" name="first" required autocomplete="given-name" title="Enter your firstname"></label>
+                <label>Lastname: <input type="text" name="last" required autocomplete="family-name" title="Enter your lastname"></label>
+                <label>E-mail: <input type="text" name="email" required autocomplete="email" title="Enter your email address"></label>
+                <input type="hidden" name="event" id="hiddenName">
+                <input type="hidden" name="date" id="hiddenDate">
+                <input type="hidden" name="time" id="hiddenTime">
+                <input type="submit" value="Register" id="book">
+                
+            </form>
+            
+        </dialog>
+
+        <div class="events-title">
+            <h1>Coming Events</h1>
+            <div id="events"></div>
+        </div>
+        <div class="news-title">    
+            <h1>World News</h1>
+            <div id="news"></div>
+        </div>    
+    </main>
      <footer>
         <div class="project-info">
             <h4>Medicine Hat Chamber of Commerce</h4>

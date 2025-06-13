@@ -12,6 +12,7 @@ body,html{
     --main: #734c3d;
     --text: #FFF8F8;
     --body: #FFFBFB;
+    --card-text: #5A5555;
 }
 
 body{
@@ -72,9 +73,9 @@ header img{
 /*formatting for navigation*/
 nav{
     display: grid;
+    grid-template-rows: 0fr;
     font-family: "Caveat";
     font-size: x-large;
-    grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
     background-color: var(--main);
     width: 40rem;
@@ -90,21 +91,25 @@ nav ul.menuLinks li a{
     /* border: solid pink 3px; */
     display: block;
     padding: .75rem 2vw;
+    text-align:left;
     color: var(--text);
     text-decoration: none;
 }
 
 nav li.current-menu-item{
     background-color: rgba(0,0,0,0.5);
+    color: var(--text);
 }
 
 nav ul.menuLinks a:hover{
-        background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 ul.menuLinks{
     list-style-type: none;
 }
+
+/*hero image formatting*/
 
 main, .hero-text{
     font-family: "Courier Prime";   
@@ -132,8 +137,7 @@ main, .hero-text{
     top: 40%;
     left: 50%; 
     transform: translate(-50%, -50%);
-    color: var(--text);
-    
+    color: var(--text);   
 }
 
 .hero-text span{
@@ -142,9 +146,9 @@ main, .hero-text{
 }
 
 .hero-text a{
-    position: absolute; 
+    position: absolute;
     text-decoration: none;
-    align-content: center;
+    align-content: center; 
     top: 475px;
     left: 10px;
     background-color: var(--header-footer);  
@@ -162,41 +166,200 @@ main, .hero-text{
         background-color: rgba(66, 136, 174, 0.9);
     }
 
+/*main formatting*/
+
 main{
+    border: solid var(--main);
     background-color: var(--main);
-    font-family: "Courier prime";
 }
 
-#description h2, #writer-type h2{
-    background-color: var(--main);
-    color: var(--body);
-    padding: 2rem;
+main h1{
     text-align: center;
+    padding: 1rem 0rem;
 }
 
-#description, #writer-cards{
+#events section{
+    /* border: solid black 5px; */
+    padding: 1rem 0rem;
+    margin-bottom: 1.5rem;
     background-color: var(--body);
-    color: var(--main);
+    color: var(--card-text);
     width: 98%;
     margin-left: 1%;
 }
 
-#description p, #writer-cards p{
-    padding: 1rem;
+#events h3{
     text-align: center;
+    border-bottom: solid var(--card-text);
+    padding-bottom: 10px;
+    font-weight: 800;
+    font-size: larger;
+}
+
+#events p{
+    text-align:start;
+    padding-top: 10px;
+    font-size: medium;
+    padding-left: 5px;
+}
+
+#registration{
+    margin-left: 5%;
+    justify-items: center;
+    margin-top: 1rem;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    font-family: "Courier prime";
+    font-size: large;
+    background-color: var(--main);
+    color: var(--body);
+    border: solid var(--main);
+}
+
+#registration:hover{
+    cursor: pointer;
+    background-color: var(--body);
+    color: var(--main);
+}
+
+/*formatting modal*/
+
+#modal{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    top: 60rem;
+    left: 1rem;
+    background-color: var(--body);
+    border-radius: 10px;
+    border: 1px;
+    padding: 0;
+    color: var(--header-footer);
+    border: solid var(--header-footer) 4px;
+}
+
+
+#banner button{
+    background-color: var(--header-footer);
+    color: var(--body);
+    width: 40px;
+    height: 40px;
+    font-family: "Courier prime";
+    font-size: xx-large;
+    border: solid var(--header-footer) 1px;
+}
+
+#banner{
+    display: grid;
+    grid-template-columns: auto 60px;
+    border-bottom: solid var(--header-footer) 2px;
+    padding: 5px;
+    background-color: var(--body);
+    width: 100%;    
+}
+
+#banner h2{
+    align-content: center;
+    text-align: center;
+}
+
+#invitation{
+  padding: 1rem;
+}
+
+#invitation a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bolder;
+    color: var(--main);
+}
+
+#invitation p{
+    font-weight: bold;
+}
+
+#modal form{
+    border: none;
+    margin: 3px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#modal input[type=text], 
+#modal input[type=email]{
+    display: block;
+    color: var(--header-footer);
+    font-size: large;
+    border: solid var(--header-footer);
+    padding: 0.3rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#modal input[type=submit]{
+    /* width: 40%; */
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    border: solid var(--header-footer);
+    background-color: var(--header-footer);
+    color: var(--body);
+    font-family: "Courier prime";
     font-size: large;
 }
 
-#writer-cards h2{
+#modal input[type=submit]:hover{
+    cursor: pointer;
+    background-color: var(--body);
+    color: var(--header-footer);
+}
+
+/*News section formatting*/
+#news{
+    width: 98%;
+    margin-left: 1%;
     background-color: var(--main);
-    color: var(--body);
-    text-align: center;
-    padding: 1.5rem 0;
-    border: solid var(--body)
+    color: var(--main);
+}
+
+#news section{
+    /* border: solid black 3px; */
+    margin: 1rem 0;
+    background-color: var(--body);
+    padding: 5px;
+}
+
+#news h3{
+    font-weight: bolder;
+    padding: 1rem 0;
+}
+
+#news h2{
+    padding-top: 1rem;
+}
+
+#news a{
+    text-decoration: none;
+    font-family: "Courier prime";
+    color: var(--main);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#news a:hover{
+    cursor: pointer;
+    font-style: italic;
+    color: rgba(0,0,0,0.3);
+
 }
 
 /*footer formatting*/
 footer{
+    /* border: solid black 4px; */
     padding-bottom: 2rem;
     font-family: "Courier Prime";
 }
