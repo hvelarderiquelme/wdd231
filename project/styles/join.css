@@ -93,26 +93,28 @@ nav li.current-menu-item{
 }
 
 nav ul.menuLinks a:hover{
-        background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul.menuLinks{
     list-style-type: none;
 }
 
+main h1{
+    color: var(--main);
+    text-align: center;
+}
+
 .join-club{
     margin: 1rem;
-    width: 50%;
     border: solid 3px var(--body);
     border-radius: 10px;
     overflow: hidden;
-    margin-left: 25%;
     background-color: var(--main);
     color: var(--body);
     font-size: large;
     font-weight: 500;
     padding-top: 0.5rem;
-    /* padding-left: 1rem; */
 }
 
 .join-club label{
@@ -128,27 +130,27 @@ ul.menuLinks{
 .join-club input[type=text], 
 .join-club input[type=email],
 .join-club input[type=tel]{
-        display: block;
-        color: var(--main);
-        font-size: large;
-    }
+    display: block;
+    color: var(--main);
+    font-size: large;
+}
 
 .join-club input[type=submit]{
-        color: var(--main);
-        background-color: var(--body);
-        border: solid var(--main);
-        font-size: large;
-        margin: 0rem 1rem 1rem;
-        width: 12rem;
-        height: 3rem;
-        border-radius: 10px;
-    }
+    color: var(--main);
+    background-color: var(--body);
+    border: solid var(--main);
+    font-size: large;
+    margin: 0rem 1rem 1rem;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+ }
 
 .join-club input[type=submit]:hover{
-        cursor: pointer;
-        background-color: rgba(128, 255, 255, 0.2);
-        color: var(--body);
-    }
+    cursor: pointer;
+    background-color: rgba(128, 255, 255, 0.2);
+    color: var(--body);
+}
 
 
 

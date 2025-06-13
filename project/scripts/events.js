@@ -22,7 +22,7 @@ const displayEvents = (events)=>{
         name.innerHTML = `${event.event}`;
         when.innerHTML = `Date: ${event.date} <br> Time: ${event.time}`;
         what.innerHTML = `Activity: ${event.description}`;
-        outcome.innerHTML = `You will learn to ${event.goal}`;
+        outcome.innerHTML = `Outcome: ${event.goal}`;
         input.setAttribute("type","submit");
         input.setAttribute("value","Register");
         input.setAttribute("id","registration");

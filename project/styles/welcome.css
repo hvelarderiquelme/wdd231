@@ -70,7 +70,7 @@ nav{
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
-    background-color: var(--main);
+    background-color: var(--header-footer);
     width: 40rem;
 }
 
@@ -102,16 +102,16 @@ ul.menuLinks{
 
 /*formatting main*/
 main h2{
-    color: var(--main);
+    color: var(--header-footer);
     text-align: center;
     padding: 1rem;
 }
 
 .member-info{
-    border: solid var(--main) 3px;
-    width: 50%;
+    border: solid var(--header-footer) 5px;
+    /* width: 50%; */
     margin-top: 1rem;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     margin-bottom: 2rem;
     border-radius: 10px;
     overflow: hidden;

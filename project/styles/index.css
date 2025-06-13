@@ -97,12 +97,12 @@ nav ul.menuLinks li a{
 }
 
 nav li.current-menu-item{
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     color: var(--text);
 }
 
 nav ul.menuLinks a:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 ul.menuLinks{
@@ -120,7 +120,7 @@ main, .hero-text{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero.webp");
 
     /* Set a specific height */
-    height: 60%;
+    height: 80%;
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -134,7 +134,7 @@ main, .hero-text{
     /* border: solid black 5px; */
     text-align: center;
     position: absolute; 
-    top: 50%;
+    top: 40%;
     left: 50%; 
     transform: translate(-50%, -50%);
     color: var(--text);   
@@ -145,10 +145,12 @@ main, .hero-text{
     color: white;
 }
 
-.hero-text button{
-    position: absolute; 
-    top: 200px;
-    left: 45%;
+.hero-text a{
+    position: absolute;
+    text-decoration: none;
+    align-content: center; 
+    top: 475px;
+    left: 10px;
     background-color: var(--header-footer);  
     width: 140px;
     height: 70px;
@@ -159,12 +161,7 @@ main, .hero-text{
     border: solid var(--body);
 }
 
-.hero-text button a{
-    text-decoration: none;
-    color: var(--body);
-}
-
-.hero-text button:hover{
+.hero-text a:hover{
         cursor: pointer;
         background-color: rgba(66, 136, 174, 0.9);
     }
@@ -207,8 +204,7 @@ main h1{
 }
 
 #registration{
-    width: 30%;
-    margin-left: 35%;
+    margin-left: 5%;
     justify-items: center;
     margin-top: 1rem;
     border-radius: 8px;
@@ -233,29 +229,30 @@ main h1{
     overflow: hidden;
     position: relative;
     top: 60rem;
-    left: 10rem;
+    left: 1rem;
     background-color: var(--body);
     border-radius: 10px;
     border: 1px;
     padding: 0;
-    color: var(--main);
-    border: solid var(--main) 4px;
+    color: var(--header-footer);
+    border: solid var(--header-footer) 4px;
 }
 
+
 #banner button{
-    background-color: var(--main);
+    background-color: var(--header-footer);
     color: var(--body);
     width: 40px;
     height: 40px;
     font-family: "Courier prime";
     font-size: xx-large;
-    border: solid var(--main) 1px;
+    border: solid var(--header-footer) 1px;
 }
 
 #banner{
     display: grid;
     grid-template-columns: auto 60px;
-    border-bottom: solid var(--main) 2px;
+    border-bottom: solid var(--header-footer) 2px;
     padding: 5px;
     background-color: var(--body);
     width: 100%;    
@@ -277,31 +274,37 @@ main h1{
     color: var(--main);
 }
 
+#invitation p{
+    font-weight: bold;
+}
+
 #modal form{
     border: none;
     margin: 3px;
     padding: 1rem;
+    font-weight: bold;
 }
 
 #modal input[type=text], 
 #modal input[type=email]{
     display: block;
-    color: var(--main);
+    color: var(--header-footer);
     font-size: large;
-    border: solid var(--main);
+    border: solid var(--header-footer);
     padding: 0.3rem;
     margin-bottom: 0.7rem;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 #modal input[type=submit]{
-    width: 20%;
-    margin-left: 40%;
+    /* width: 40%; */
+    margin-top: 1rem;
     padding: 0.5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
-    border: solid var(--main);
-    background-color: var(--main);
+    border: solid var(--header-footer);
+    background-color: var(--header-footer);
     color: var(--body);
     font-family: "Courier prime";
     font-size: large;
@@ -310,7 +313,7 @@ main h1{
 #modal input[type=submit]:hover{
     cursor: pointer;
     background-color: var(--body);
-    color: var(--main);
+    color: var(--header-footer);
 }
 
 /*News section formatting*/

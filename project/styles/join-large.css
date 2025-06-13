@@ -54,9 +54,22 @@
     }
 
     /*formatting main*/
-    .join-chamber{
-        /* border: solid 3px black; */
-        border-radius: 10px;
+    /*formatting modal*/
+    
+    #registration{
+    margin-left: 5%;
+    justify-items: center;
+   
+    }
+
+    .join-club{
+        width: 30%;
+        margin-left: 35%;   
+    }
+
+    .join-club input[type=submit]{
+        /* border: solid black 5px; */
+        margin-left: 12rem;
     }
 
      /*formatting footer*/

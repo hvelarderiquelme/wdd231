@@ -69,7 +69,7 @@
     margin-bottom: 1rem;
    }
  
-    .hero-text button{
+    .hero-text a{
     position: absolute; 
     top: 200px;
     left: 45%;
@@ -113,6 +113,24 @@
     text-align: center;
     /* border: solid var(--header-footer) 5px; */
    }
+
+   #registration{
+    width: 30%;
+    margin-left: 35%;
+    justify-items: center;
+    }
+
+    #modal{
+        position: relative;
+        top: 71rem;
+        left: 20rem;
+    }
+
+    #modal input[type=submit]{
+        width: 20%;
+        margin-left: 40%;
+        padding: 0.5rem;
+    }
 
      /*formatting footer*/
     footer{

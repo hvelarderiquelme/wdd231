@@ -54,7 +54,10 @@
     }
 
     /*formatting main*/
-
+    .member-info{
+        width: 50%;
+        margin-left: 25%;
+    }
 
      /*formatting footer*/
     footer{
