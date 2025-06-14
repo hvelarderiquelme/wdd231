@@ -10,7 +10,7 @@ body,html{
 :root{
     --header-footer: #3D6473; 
     --main: #734c3d;
-    --text: #FFF8F8;
+    --text: #FFFFF8;
     --body: #FFFBFB;
     --card-text: #5A5555;
 }
@@ -75,7 +75,7 @@ nav{
     display: grid;
     grid-template-rows: 0fr;
     font-family: "Caveat";
-    font-size: x-large;
+    font-size: xx-large;
     transition: grid-template-rows 0.5s ease-out;
     background-color: var(--main);
     width: 40rem;

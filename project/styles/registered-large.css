@@ -47,6 +47,7 @@
         background-color: var(--header-footer);
         display: block;
         width: 100%;
+        font-size: x-large;
         align-content: center;
         justify-items: center;
         font-family: "Caveat";
