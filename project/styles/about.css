@@ -214,16 +214,20 @@ footer{
     font-family: "Courier Prime";
 }
 
+footer p{
+    /* border: solid black; */
+    padding-top: 1rem;
+}
+
 .course-info, .project-info{
     padding-left:2rem;
 }
 
 .project-info a{
     color: var(--text);
-    font-family: "Courier prime";
+    /* font-family: "Courier prime"; */
     text-decoration: none;
 }
-
 .project-info a:hover{
     font-style: italic;
     font-weight: bold;

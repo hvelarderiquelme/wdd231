@@ -162,6 +162,11 @@ footer{
     font-family: "Courier Prime";
 }
 
+footer p{
+    /* border: solid black; */
+    padding-top: 1rem;
+}
+
 .course-info, .project-info{
     padding-left:2rem;
 }
