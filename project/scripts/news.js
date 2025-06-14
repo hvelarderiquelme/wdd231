@@ -7,7 +7,6 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok){
             const articles = await response.json();
-            //console.log(articles);
             displayNews(articles);
         }else{
             throw Error(await response.text());
@@ -19,7 +18,7 @@ async function apiFetch() {
 
 function displayNews(articles){
     //console.log(articles.response.results);
-    for(i=0;i<10;i++){      
+    for(let i=0;i<10;i++){      
         let title = document.createElement("h2");
         let category = document.createElement("h3");
         let link = document.createElement("a");
@@ -40,4 +39,3 @@ function displayNews(articles){
 };
 
 apiFetch();
-// displayNews();
