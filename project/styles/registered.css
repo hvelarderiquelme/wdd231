@@ -138,6 +138,10 @@ footer p{
     padding-top: 1rem;
 }
 
+.footer-links{
+    font-size: larger;
+}
+
 .course-info, .project-info{
     padding-left:2rem;
 }
