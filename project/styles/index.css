@@ -173,7 +173,7 @@ main{
     background-color: var(--main);
 }
 
-main h1{
+main h2{
     text-align: center;
     padding: 1rem 0rem;
 }
