@@ -167,6 +167,18 @@ main{
     font-family: "Courier prime";
 }
 
+#visits{
+    margin: 3rem;
+    background-color: var(--body);
+    color: var(--main);
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: "Courier prime";
+}
+
 #description h2, #writer-type h2{
     background-color: var(--main);
     color: var(--body);
