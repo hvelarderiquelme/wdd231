@@ -160,7 +160,8 @@ footer p{
     width: 60px;
     height: auto;
     border-radius: 8px;
-    margin: 1rem;   
+    margin: 1rem;
+    padding: 2rem 1rem;   
 }
 
 .social-media{
