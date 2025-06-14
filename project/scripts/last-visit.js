@@ -45,11 +45,11 @@ function modalVisit(days, numVisits){
         p.innerHTML = `Let us know if you have any questions.`;
     }
     else if(parseInt(days) < 1){
-        h1.innerHTML = `Hi again!  Have you joined yet?`;
+        h1.innerHTML = `Hi again! Have you joined yet?`;
         p.innerHTML = `We hope you enjoy your visit. `;
     }else if(parseInt(days) == 1){
-            h1.innerHTML = `Well, Hello There! Great to see you again!`;
-            p.innerHTML = `You last visited ${parseInt(days)} day ago.`;
+        h1.innerHTML = `Well, Hello There! Great to see you again!`;
+        p.innerHTML = `You last visited ${parseInt(days)} day ago.`;
         }
         else
         {
@@ -57,5 +57,4 @@ function modalVisit(days, numVisits){
             p.innerHTML = `You last visited ${parseInt(days)} days ago.`;
         }
     
-    // visits.showModal();
 };

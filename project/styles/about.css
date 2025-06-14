@@ -168,16 +168,17 @@ main{
 }
 
 #visits{
-    margin: 3rem;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+    text-align: center;
     background-color: var(--body);
     color: var(--main);
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 10px;
-    font-family: "Courier prime";
 }
+
+#visits p{
+    padding-top: 10px;
+}
+
 
 #description h2, #writer-type h2{
     background-color: var(--main);
