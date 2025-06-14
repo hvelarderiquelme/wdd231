@@ -60,14 +60,14 @@
         justify-items: center;
     }
 
-    nav li.current-menu-item{
+    /* nav li.current-menu-item{
         background-color: rgba(0,0,0,0.2);
         color: var(--text);
     }
 
     nav ul.menuLinks a:hover{
         background-color: rgba(255, 255, 255, 0.2);
-    }   
+    }    */
 
    /*hero image formatting*/
    .hero-image{

@@ -72,7 +72,7 @@ nav{
     font-family: "Caveat";
     font-size: xx-large;
     transition: grid-template-rows 0.5s ease-out;
-    background-color: var(--main);
+    background-color: var(--header-footer);
     width: 40rem;
 }
 
@@ -91,7 +91,7 @@ nav ul.menuLinks li a{
 }
 
 nav ul.menuLinks a:hover{
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
 }
 
 ul.menuLinks{
