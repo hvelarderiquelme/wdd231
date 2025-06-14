@@ -1,4 +1,4 @@
-// localStorage.setItem("numVisits-ls",0);// reset the coount to 0
+ //localStorage.setItem("numVisits-ls",0);// reset the coount to 0
 /*display element variabke*/
 const msToDays = 86400000;
 const visits = document.querySelector("#visits");
@@ -48,7 +48,7 @@ function modalVisit(days, numVisits){
         h1.innerHTML = `Hi again! Have you joined yet?`;
         p.innerHTML = `We hope you enjoy your visit. `;
     }else if(parseInt(days) == 1){
-        h1.innerHTML = `Hello There! Great to see you again!`;
+        h1.innerHTML = `Well, Hello There! Great to see you again!`;
         p.innerHTML = `You last visited ${parseInt(days)} day ago.`;
         }
         else
