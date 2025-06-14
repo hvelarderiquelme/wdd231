@@ -95,7 +95,7 @@ nav ul.menuLinks li a{
 }
 
 nav li.current-menu-item{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
 }
 
 nav ul.menuLinks a:hover{
