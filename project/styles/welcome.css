@@ -139,6 +139,17 @@ footer{
     padding-left:2rem;
 }
 
+.project-info a{
+    color: var(--text);
+    font-family: "Courier prime";
+    text-decoration: none;
+}
+
+.project-info a:hover{
+    font-style: italic;
+    font-weight: bold;
+}
+
 .social-media img{
     /* border: solid black 3px; */
     width: 60px;

@@ -1,5 +1,5 @@
 import {events} from "../data/events.mjs"
-// console.log(events);
+
 const closeButton = document.querySelector("#modal button");
 const modal = document.querySelector("#modal");
 const hiddenName = document.querySelector("#hiddenName");
@@ -49,5 +49,4 @@ function showModalMessage(event){
     modal.showModal();
     
 }
-
 

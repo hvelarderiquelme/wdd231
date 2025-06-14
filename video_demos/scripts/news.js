@@ -1,25 +1,25 @@
-const myKey = "27368332-a4f0-4002-821c-7a564758213e";
-const url = `https://content.guardianapis.com/search?api-key=${myKey}`;
+import {key} from "../data/key.mjs";
 
+const url = `https://content.guardianapis.com/search?api-key=${key}`;
 
-async function apiFetch() {
+async function apiFetch(){
     try{
         const response = await fetch(url);
-        if (response.ok){
+        if(response.ok){
             const articles = await response.json();
             //console.log(articles);
             displayNews(articles);
         }else{
-            throw Error(await response.text());
+            throw Error(error.text());
         }
-    }catch (error){
+    }catch(error){
         console.log(error);
     }
 }
 
 function displayNews(articles){
     //console.log(articles.response.results);
-    for(i=0;i<10;i++){      
+    for(let i=0;i<10;i++){      
         let title = document.createElement("h2");
         let category = document.createElement("h3");
         let link = document.createElement("a");
@@ -40,4 +40,3 @@ function displayNews(articles){
 };
 
 apiFetch();
-// displayNews();
