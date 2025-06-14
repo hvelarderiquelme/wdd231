@@ -72,14 +72,12 @@
         margin-bottom: 1rem;
    }
 
-   .hero-text button{
+   .hero-text a{
     position: absolute; 
     top: 200px;
     left: 45%;
-}
-
+    }
     
-
    /*formatting main*/
 
    main{
